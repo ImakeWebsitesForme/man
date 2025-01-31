@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaden Tok</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Jaden Tok</div>
+        <div class="upload-button">
+            <button onclick="openUploadModal()">Upload Video</button>
+        </div>
+    </header>
+
+    <main id="videoFeed">
+        <!-- Videos will appear here dynamically -->
+    </main>
+
+    <!-- Modal for Uploading Videos -->
+    <div class="upload-modal" id="uploadModal">
+        <div class="modal-content">
+            <input type="file" id="videoInput" accept="video/*">
+            <input type="text" id="videoTitle" placeholder="Enter video title">
+            <button onclick="uploadVideo()">Upload</button>
+            <button onclick="closeUploadModal()">Cancel</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+0
